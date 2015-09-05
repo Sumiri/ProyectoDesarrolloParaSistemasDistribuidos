@@ -1,0 +1,168 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Sistema de Registro de Pedidos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/estilos.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    
+ <script type="text/javascript">
+function popup(url) {
+var width  = 350;
+var height = 350;
+var left   = (screen.width  - width)/2;
+var top    = (screen.height - height)/2;
+var params = 'width='+width+', height='+height; params += ', top='+top+', left='+left; params += ', directories=no'; params += ', location=no'; params += ', menubar=no'; params += ', resizable=no'; params += ', scrollbars=yes'; params += ', toolbar=no'; newwin=window.open(url,'', params);
+if (window.focus) {
+   newwin.focus()
+}
+return false;
+}
+</script>
+
+  </head>
+	<body>
+<nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="registro.html">Registro de Pedidos</a></li>
+              <li><a href="#contact">Crear Clientes</a></li>
+              <li class="dropdown">
+                <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Reportes <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="estadisticas.html">Estadisticas de ventas</a></li>
+                  <li><a href="comisiones.html">Consolidado de Comisiones</a></li>
+                  <li class="divider" role="separator"></li>
+             
+                </ul>
+              </li>
+               <li><a href="inicio.html"> Salir del sistema</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+<div class="panel panel-default panel-pedidos">
+            <div class="panel-heading">
+              <h3 class="panel-title">Consulta de estadisticas de Ventas por producto</h3>
+            </div>
+            <div class="panel-body">
+ <form class="form-horizontal" role="form" name="form1">
+   <table width="80%" border="0">
+     <tr>
+       <td width="8%" style="height:40px;">Compañia:</td>
+       <td width="44%"><input class="form-control" id="ex3" type="text" name="txtcompania"></td>
+       <td width="16%"><button type="button" class="btn btn-primary" onClick="javascript:popup('compania.html')">...</button></td>
+       <td width="4%"></td>
+       <td width="28%"></td>
+     </tr>
+     <tr>
+       <td style="height:40px;">Sucursal:</td>
+       <td><input class="form-control" name="txtsucursal" id="ex3" type="text"></td>
+       <td><button type="button" class="btn btn-primary" onClick="javascript:popup('sucursal.html')">...</button></td>
+       <td colspan="2" rowspan="2" align="center" valign="bottom">
+       <p>&nbsp;</p>
+       </td>
+       </tr>
+     <tr>
+       <td style="height:40px;">Año:</td>
+       <td><input class="form-control" id="ex2" name="txtano" type="text"></td>
+       <td></td>
+       </tr>
+     <tr>
+       <td style="height:40px;">Moneda:</td>
+       <td colspan="3"><input type="radio" name="optradio1">
+         Soles</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="radio" name="optradio1">Dolares</label></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td height="27">Tipo informe:</td>
+       <td><input type="radio" name="optradio">
+         General
+           </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="radio" name="optradio">
+           Detallado
+          </label></td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="68">&nbsp;</td>
+       <td><a class="btn btn-primary btn-lg" href="#" role="button">Generar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary btn-lg" href="#" role="button">Cancelar</a></td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+     </tr>
+   </table>
+
+ </form>
+<hr>
+
+              <table width="80%" class="table">
+            <thead>
+              <tr bgcolor="#999999">
+                <th width="13%">Item</th>
+                <th width="28%">Producto</th>
+                <th width="13%">Precio</th>
+                <th width="29%">Cantidad</th>
+                <th width="17%">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>15000</td>
+                <td>1</td>
+                <td>15000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>2400</td>
+                <td>1</td>
+                <td>2400</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>3100</td>
+                <td>2</td>
+                <td>6200</td>
+              </tr>
+            </tbody>
+          </table>
+            </div>
+          </div>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
