@@ -22,10 +22,10 @@
     <link href="theme.css" rel="stylesheet">
     
  <script type="text/javascript">
- function envia(nome){
+ function envia(nome,precio){
 
-opener.document.form1.txtfecha.value = nome;
-
+opener.document.form1.txtproducto.value = nome;
+opener.document.form1.txtprecio.value = precio;
 
 close();
 }
@@ -35,34 +35,30 @@ close();
 	<body>
 <div class="panel panel-default panel-pedidos">
             <div class="panel-heading">
-              <h3 class="panel-title">Calendario</h3>
+              <h3 class="panel-title">Listado de Productos</h3>
             </div>
             <div class="panel-body">
               <table width="80%" class="table">
             <thead>
               <tr bgcolor="#999999">
-                <th width="28%">Dia</th>
+                <th width="13%">Id Producto</th>
+                <th width="28%">Descripción</th>
                 </tr>
             </thead>
             <tbody>
               <tr>
-                
-                <td><a href="#" onclick="envia('Viernes 04 de setiempre del 2015');">Viernes 04 de setiempre del 2015</a></td>
+                <td><a href="#" onclick="envia('Producto 1','1500');">1</a></td>
+                <td><a href="#" onclick="envia('Producto 1','1500');">Producto 1</a></td>
                 
               </tr>
               <tr>
-              
-                <td><a href="#" onclick="envia('Sábado 05 de setiempre del 2015');">Sábado 05 de setiempre del 2015</a></td>
+              <td><a href="#" onclick="envia('Producto 2','1800');">2</a></td>
+                <td><a href="#" onclick="envia('Producto 2','1800');">Producto 2</a></td>
                 
               </tr>
              <tr>
-              
-                <td><a href="#" onclick="envia('Domingo 06 de setiempre del 2015');">Domingo 06 de setiempre del 2015</a></td>
-                
-              </tr>
-                 <tr>
-              
-                <td><a href="#" onclick="envia('Lunes 07 de setiempre del 2015');">Lunes 07 de setiempre del 2015</a></td>
+               <td><a href="#" onclick="envia('Producto 3','2100');">3</a></td>
+                <td><a href="#" onclick="envia('Producto 3','2100');">Producto 3</a></td>
                 
               </tr>
             </tbody>

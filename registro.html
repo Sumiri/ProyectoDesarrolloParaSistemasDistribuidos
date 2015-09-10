@@ -33,6 +33,11 @@ if (window.focus) {
 }
 return false;
 }
+
+function aviso(mensaje){
+
+alert(mensaje);
+}
 </script>
 
   </head>
@@ -50,8 +55,8 @@ return false;
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-<<<<<<< HEAD
               <li><a href="inicio.html">Inicio</a></li>
+              <li ><a href="listado.html">Listado de Pedidos</a></li>
               <li  class="active"><a href="registro.html">Registro de Pedidos</a></li>
               <li><a href="crearclientes.html">Crear Clientes</a></li>
               <li class="dropdown">
@@ -59,16 +64,6 @@ return false;
                 <ul class="dropdown-menu">
                   <li><a href="estadisticas.html">Estadisticas de ventas</a></li>
                   <li><a href="comisiones.html">Consolidado de Comisiones</a></li>
-=======
-              <li class="active"><a href="inicio.html">Inicio</a></li>
-              <li><a href="registro.html">Registro de Pedidos</a></li>
-              <li><a href="#contact">Crear Clientes</a></li>
-              <li class="dropdown">
-                <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Reportes <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Estadisticas de ventas</a></li>
-                  <li><a href="#">Consolidado de Comisiones</a></li>
->>>>>>> 88896f11fe634c2ad529c99d6e1c95d011a0739c
                   <li class="divider" role="separator"></li>
              
                 </ul>
@@ -110,7 +105,7 @@ return false;
        <td colspan="3"><input class="form-control" name="txtprecio" id="ex1" type="text"> 
 <div style="float:left">Cantidad:</div>
           <input class="form-control" id="ex2" type="text"></td>
-       <td><a class="btn btn-primary btn-lg" href="#" role="button">Agregar Producto</a></td>
+       <td><a class="btn btn-primary btn-lg" href="#" role="button" onClick="javascript:aviso('Stock no Disponible')">Agregar Producto</a></td>
      </tr>
      <tr>
        <td height="27">&nbsp;</td>
@@ -124,11 +119,6 @@ return false;
  </form>
 <hr>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 88896f11fe634c2ad529c99d6e1c95d011a0739c
               <table width="80%" class="table">
             <thead>
               <tr bgcolor="#999999">
@@ -163,6 +153,7 @@ return false;
               </tr>
             </tbody>
           </table>
+          <a class="btn btn-primary btn-lg" style="float:right" href="#" role="button" onClick="javascript:aviso('Pedido registrado satisfactoriamente')">Grabar Pedido</a>
             </div>
           </div>
 
