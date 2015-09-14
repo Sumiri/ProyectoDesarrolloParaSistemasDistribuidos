@@ -1,0 +1,14 @@
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb

@@ -1,0 +1,15 @@
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.exe.config
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.exe
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\bin\Debug\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmCliente.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.exe
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmArticulo.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
