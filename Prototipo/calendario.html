@@ -1,0 +1,76 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Sistema de Registro de Pedidos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/estilos.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    
+ <script type="text/javascript">
+ function envia(nome){
+
+opener.document.form1.txtfecha.value = nome;
+
+
+close();
+}
+</script>
+
+  </head>
+	<body>
+<div class="panel panel-default panel-pedidos">
+            <div class="panel-heading">
+              <h3 class="panel-title">Calendario</h3>
+            </div>
+            <div class="panel-body">
+              <table width="80%" class="table">
+            <thead>
+              <tr bgcolor="#999999">
+                <th width="28%">Dia</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                <td><a href="#" onclick="envia('Viernes 04 de setiempre del 2015');">Viernes 04 de setiempre del 2015</a></td>
+                
+              </tr>
+              <tr>
+              
+                <td><a href="#" onclick="envia('Sábado 05 de setiempre del 2015');">Sábado 05 de setiempre del 2015</a></td>
+                
+              </tr>
+             <tr>
+              
+                <td><a href="#" onclick="envia('Domingo 06 de setiempre del 2015');">Domingo 06 de setiempre del 2015</a></td>
+                
+              </tr>
+                 <tr>
+              
+                <td><a href="#" onclick="envia('Lunes 07 de setiempre del 2015');">Lunes 07 de setiempre del 2015</a></td>
+                
+              </tr>
+            </tbody>
+          </table>
+            </div>
+          </div>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

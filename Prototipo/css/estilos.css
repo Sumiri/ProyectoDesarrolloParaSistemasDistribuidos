@@ -1,0 +1,12 @@
+.panel{
+	width: 360px;
+	margin: 0 auto;
+	margin-top: 200px;
+
+} 
+.panel-pedidos{width: 85%;
+	margin-top: 20px;
+}
+#ex3{width: 500px;display: inline-block;}
+#ex1{width: 150px;float: left;}
+#ex2{width: 150px;display:}
