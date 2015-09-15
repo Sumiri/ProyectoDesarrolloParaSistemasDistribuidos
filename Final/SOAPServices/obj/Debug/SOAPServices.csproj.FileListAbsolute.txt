@@ -12,3 +12,11 @@ C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\Proy
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.dll.config
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\DSD\ProyectoDSD\SOAPServices\bin\NHibernate.dll

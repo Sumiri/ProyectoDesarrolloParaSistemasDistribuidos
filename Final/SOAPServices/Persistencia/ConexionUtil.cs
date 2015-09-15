@@ -13,7 +13,8 @@ namespace SOAPServices.Persistencia
             //return "Data Source=.;Initial Catalog=BD_Pedidos;Integrated Security=SSPI;";
             //return "Data Source=DESARROLLO_PC;Initial Catalog=BD_Pedidos;Integrated Security=SSPI;";
             //return "Server=DESARROLLO_PC\\SQL2008R2;Database=BD_Pedidos;User Id=raponte; Password=xzfqxt";
-            return "Server=JAIME-PC\\SQL2008R2;Database=BD_Pedidos;User Id=raponte; Password=xzfqxt";
+            //return "Server=JAIME-PC\\SQL2008R2;Database=BD_Pedidos;User Id=raponte; Password=xzfqxt";
+            return "Data Source=TOSHIBA\\SQLEXPRESS;Initial Catalog=BD_Pedidos;Integrated Security=True";
         }
     }
 }

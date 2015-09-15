@@ -71,9 +71,13 @@
     <Content Include="Articulos.svc" />
     <Content Include="Clientes.svc" />
     <EmbeddedResource Include="Dominio\Articulo.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Pedido.hbm.xml" />
+    <EmbeddedResource Include="Dominio\PedidoDetalle.hbm.xml" />
     <Content Include="Librerias\Iesi.Collections.dll" />
     <Content Include="Librerias\NHibernate.dll" />
     <Content Include="Logo.svc" />
+    <Content Include="PedidoDetalles.svc" />
+    <Content Include="Pedidos.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,17 +89,29 @@
     </Compile>
     <Compile Include="Dominio\Articulo.cs" />
     <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Pedido.cs" />
+    <Compile Include="Dominio\PedidoDetalle.cs" />
     <Compile Include="IArticulos.cs" />
     <Compile Include="IClientes.cs" />
+    <Compile Include="IPedidoDetalles.cs" />
+    <Compile Include="IPedidos.cs" />
     <Compile Include="Logo.svc.cs">
       <DependentUpon>Logo.svc</DependentUpon>
     </Compile>
     <Compile Include="ILogo.cs" />
+    <Compile Include="PedidoDetalles.svc.cs">
+      <DependentUpon>PedidoDetalles.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.svc.cs">
+      <DependentUpon>Pedidos.svc</DependentUpon>
+    </Compile>
     <Compile Include="Persistencia\ArticuloDAO.cs" />
     <Compile Include="Persistencia\BaseDAO.cs" />
     <Compile Include="Persistencia\ClienteDAO.cs" />
     <Compile Include="Persistencia\ConexionUtil.cs" />
     <Compile Include="Persistencia\NHibernateHelper.cs" />
+    <Compile Include="Persistencia\PedidoDAO.cs" />
+    <Compile Include="Persistencia\PedidoDetalleDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
