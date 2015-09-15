@@ -76,6 +76,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\PedidoDetallesWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PedidosWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmArticulo.resx">
       <DependentUpon>frmArticulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,7 +104,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\SOAPServices.Dominio.Articulo.datasource" />
     <None Include="Properties\DataSources\SOAPServices.Dominio.Cliente.datasource" />
+    <None Include="Properties\DataSources\SOAPServices.Dominio.FacturaCabecera.datasource" />
+    <None Include="Properties\DataSources\SOAPServices.Dominio.Pedido.datasource" />
+    <None Include="Properties\DataSources\SOAPServices.Dominio.PedidoDetalle.datasource" />
     <None Include="Properties\DataSources\SOAPServices.IClientes.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,9 +129,6 @@
     <None Include="Service References\ArticulosServiceReference\Articulos2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ArticulosServiceReference\PedidosWin.ArticulosServiceReference.Articulo.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\ClientesServiceReference\Clientes.wsdl" />
     <None Include="Service References\ClientesServiceReference\Clientes.xsd">
       <SubType>Designer</SubType>
@@ -126,6 +137,26 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ClientesServiceReference\Clientes2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidoDetallesWS\PedidoDetalles.wsdl" />
+    <None Include="Service References\PedidoDetallesWS\PedidoDetalles.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidoDetallesWS\PedidoDetalles1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidoDetallesWS\PedidoDetalles2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidosWS\Pedidos.wsdl" />
+    <None Include="Service References\PedidosWS\Pedidos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidosWS\Pedidos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PedidosWS\Pedidos2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -144,6 +175,23 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ArticulosServiceReference\" />
     <WCFMetadataStorage Include="Service References\ClientesServiceReference\" />
+    <WCFMetadataStorage Include="Service References\PedidoDetallesWS\" />
+    <WCFMetadataStorage Include="Service References\PedidosWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientesServiceReference\Clientes.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientesServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientesServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientesServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ArticulosServiceReference\Articulos.disco" />
@@ -161,16 +209,31 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesServiceReference\Clientes.disco" />
+    <None Include="Service References\PedidosWS\Pedidos.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\PedidosWS\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesServiceReference\configuration.svcinfo" />
+    <None Include="Service References\PedidosWS\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesServiceReference\Reference.svcmap">
+    <None Include="Service References\PedidosWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PedidoDetallesWS\PedidoDetalles.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PedidoDetallesWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PedidoDetallesWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PedidoDetallesWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

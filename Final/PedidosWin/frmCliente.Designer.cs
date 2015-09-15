@@ -39,18 +39,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Location = new System.Drawing.Point(9, 10);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(596, 22);
+            this.textBox1.Size = new System.Drawing.Size(448, 20);
             this.textBox1.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 32);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(596, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(447, 253);
             this.dataGridView1.TabIndex = 1;
             // 
             // ClientebindingSource
@@ -59,21 +61,24 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(478, 357);
+            this.button1.Location = new System.Drawing.Point(358, 290);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 30);
+            this.button1.Size = new System.Drawing.Size(73, 24);
             this.button1.TabIndex = 2;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 479);
+            this.ClientSize = new System.Drawing.Size(566, 389);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCliente";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmCliente_Load);

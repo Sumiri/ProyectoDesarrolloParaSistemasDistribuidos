@@ -13,3 +13,18 @@ C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\Proy
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.pdb
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmArticulo.resources
 C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.exe.config
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.exe
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\PedidosWin.pdb
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\NHibernate.dll
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\Iesi.Collections.dll
+C:\DSD\ProyectoDSD\PedidosWin\bin\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.csprojResolveAssemblyReference.cache
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmArticulo.resources
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmCliente.resources
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.exe
+C:\DSD\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.pdb
