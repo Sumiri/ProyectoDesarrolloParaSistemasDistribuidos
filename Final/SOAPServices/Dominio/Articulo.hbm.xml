@@ -8,5 +8,6 @@
       <generator class="increment" />
     </id>
     <property name="Descripcion" column="descripcion_articulo" />
+    <property name="Precio" column="precio_unitario" />
   </class>
 </hibernate-mapping>

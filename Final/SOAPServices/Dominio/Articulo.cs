@@ -13,5 +13,8 @@ namespace SOAPServices.Dominio
         public int Codigo { get; set; }
         [DataMember]
         public string Descripcion { get; set; }
+        [DataMember]
+        public double Precio { get; set; }
+
     }
 }
