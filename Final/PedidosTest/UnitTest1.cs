@@ -11,9 +11,7 @@ namespace PedidosTest
         public void T1_CrearCliente()
         {
             ClienteServiceReference.ClientesClient proxy = new ClienteServiceReference.ClientesClient();
-
             Cliente resultado = proxy.CrearCliente("CLINICA AMERICANA", "clinicaa@gmail.com");
-
             Assert.AreEqual("CLINICA AMERICANA", resultado.RazonSocial);
             Assert.AreEqual("clinicaa@gmail.com", resultado.Correo);
         }
@@ -22,9 +20,7 @@ namespace PedidosTest
         public void T2_ListarClientes()
         {
             ClienteServiceReference.ClientesClient proxy = new ClienteServiceReference.ClientesClient();
-
             ClienteServiceReference.Cliente[] listadoClientes = proxy.ListarClientes();
-
             Assert.IsTrue(listadoClientes.Length > 0);
         }
     }
