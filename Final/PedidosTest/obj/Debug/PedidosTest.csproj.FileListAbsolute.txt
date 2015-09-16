@@ -1,0 +1,6 @@
+D:\proyecto\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.dll.config
+D:\proyecto\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.dll
+D:\proyecto\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.pdb
+D:\proyecto\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
+D:\proyecto\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.dll
+D:\proyecto\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.pdb

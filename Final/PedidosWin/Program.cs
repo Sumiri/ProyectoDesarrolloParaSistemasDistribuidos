@@ -18,7 +18,7 @@ namespace PedidosWin
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmCliente());
             //Application.Run(new frmArticulo());
-            Application.Run(new frmPedido());
+            Application.Run(new frmPrincipal());
         }
     }
 }
