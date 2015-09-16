@@ -23,5 +23,16 @@ namespace PedidosTest
             ClienteServiceReference.Cliente[] listadoClientes = proxy.ListarClientes();
             Assert.IsTrue(listadoClientes.Length > 0);
         }
+        
+        [TestMethod]
+        public void T3_ObtenerArticulo()
+        {
+
+            ArticulosReference.ArticulosClient proxy = new ArticulosReference.ArticulosClient();
+            Articulo articulo = proxy.ObtenerArticulo(1);
+            Assert.AreEqual(articulo.Descripcion, "AQUOL 15 ML");
+
+
+        }
     }
 }
