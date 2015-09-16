@@ -34,5 +34,21 @@ namespace PedidosTest
 
 
         }
+        [TestMethod]
+        public void T4_ListarArticulos()
+        {
+            ArticulosReference.ArticulosClient proxy = new ArticulosReference.ArticulosClient();
+            ArticulosReference.Articulo[] listadoClientes = proxy.ListarArticulos();
+            Assert.IsTrue(listadoClientes.Length > 0);
+        }
+
+        [TestMethod]
+        public void T5_CrearCliente()
+        {
+            ArticulosReference.ArticulosClient proxy = new ArticulosReference.ArticulosClient();
+            Articulo resultado = proxy.CrearArticulo("asdasdasd");
+            Assert.AreEqual("asdasdasd", resultado.Descripcion);
+
+        }
     }
 }
