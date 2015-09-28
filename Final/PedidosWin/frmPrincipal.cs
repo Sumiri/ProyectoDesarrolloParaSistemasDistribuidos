@@ -27,5 +27,11 @@ namespace PedidosWin
         {
 
         }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListado oFrmListado = new frmListado();
+            oFrmListado.Show();
+        }
     }
 }
