@@ -42,3 +42,11 @@ D:\proyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
 D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
 D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
 D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.dll.config
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\Iesi.Collections.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\NHibernate.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\DSD\ProyectoDSD_v2\SOAPServices\obj\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\obj\Debug\SOAPServices.pdb

@@ -149,6 +149,9 @@ namespace PedidosWin
             }
             MessageBox.Show("Pedido Registrado");
             this.Close();
+
+            frmListado oFrmListado = new frmListado();
+            oFrmListado.Show();
         }     
     }
 }
