@@ -16,6 +16,8 @@ namespace RESTServices.Dominio
         [DataMember]
         public string Cliente { get; set; }
         [DataMember]
+        public string Direccion { get; set; }
+        [DataMember]
         public string Moneda { get; set; }
         [DataMember]
         public string Importe { get; set; }

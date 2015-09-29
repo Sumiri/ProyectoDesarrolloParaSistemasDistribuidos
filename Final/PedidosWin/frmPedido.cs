@@ -147,7 +147,7 @@ namespace PedidosWin
                     UNIDADESCOMPROMETIDAS,IMPORTEPRECIOUNITARIOSIGV,IMPORTEPRECIOUNITARIOCIGV,IMPORTESUBTOTALBRUTO,PORCENTAJEDESCUENTO,IMPORTESUBTOTALDESCUENTO,
                     IMPORTESUBTOTALNETO, CODESTADOATENCION, CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
             }
-            MessageBox.Show("Pedido Registrado");
+            MessageBox.Show("Pedido Registrado","Sistema de Pedidos");
             this.Close();
 
             frmListado oFrmListado = new frmListado();

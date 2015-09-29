@@ -14,6 +14,8 @@ namespace RESTServices.Dominio
         [DataMember]
         public string RazonSocial { get; set; }
         [DataMember]
+        public string Direccion { get; set; }
+        [DataMember]
         public string Correo { get; set; }
     }
 }

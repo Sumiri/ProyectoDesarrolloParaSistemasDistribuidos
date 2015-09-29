@@ -45,9 +45,10 @@ namespace RESTServices.Persistencia
                         {
                             clienteEncontrado = new Cliente()
                             {
-                                Codigo = (string)Convert.ToString(resultado["COD_CLIENTE"]),
-                                Correo = (string)resultado["CORREO"],
-                                RazonSocial = (string)resultado["RAZON_SOCIAL"]
+                                Codigo = (string)Convert.ToString(resultado["COD_CLIENTE"]),                                
+                                RazonSocial = (string)resultado["RAZON_SOCIAL"],
+                                Direccion = (string)resultado["DIRECCION"],
+                                Correo = (string)resultado["CORREO"]
                             };
                         }
                     }
