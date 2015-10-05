@@ -66,6 +66,8 @@ namespace PedidosWin
                 dataGridView1.Columns["Importe"].ValueType = typeof(System.Double);
                 dataGridView1.Columns["Importe"].DefaultCellStyle.Format = "#,0.##";
                 dataGridView1.Columns["Importe"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+                dataGridView1.Columns["Anho"].Visible = false;
             }
         }
 

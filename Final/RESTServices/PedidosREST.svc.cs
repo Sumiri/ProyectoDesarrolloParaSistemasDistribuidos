@@ -33,17 +33,23 @@ namespace RESTServices
 
         public Pedido ModificarPedido(Pedido pedidoAModificar)
         {
-            return null;
+            return dao.Modificar(pedidoAModificar);
         }
 
         public void EliminarPedido(string numero)
         {
-
+              dao.Eliminar(numero);
         }
 
         public List<Pedido> ListarPedidos()
         {
             return dao.ListarTodos();
+        }
+
+
+        public List<Pedido> ListarPedidos2(string numero)
+        {
+            return dao.ListarTodos2(numero);
         }
     }
 }

@@ -33,5 +33,16 @@ namespace PedidosWin
             frmListado oFrmListado = new frmListado();
             oFrmListado.Show();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void estadisticasDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
+            ofrmEstadisticas.Show();
+        }
     }
 }

@@ -31,13 +31,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consolidadoDeComisionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadisticasDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,12 +53,14 @@
             this.menuStrip1.Size = new System.Drawing.Size(694, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroDePedidosToolStripMenuItem,
-            this.listadoToolStripMenuItem});
+            this.listadoToolStripMenuItem,
+            this.estadisticasDePedidosToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.inicioToolStripMenuItem.Text = "Inicio";
@@ -68,6 +71,13 @@
             this.registroDePedidosToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.registroDePedidosToolStripMenuItem.Text = "Registro de Pedidos";
             this.registroDePedidosToolStripMenuItem.Click += new System.EventHandler(this.registroDePedidosToolStripMenuItem_Click);
+            // 
+            // listadoToolStripMenuItem
+            // 
+            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.listadoToolStripMenuItem.Text = "Listado de Pedidos";
+            this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -112,12 +122,12 @@
             this.consolidadoDeComisionesToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.consolidadoDeComisionesToolStripMenuItem.Text = "Consolidado de comisiones";
             // 
-            // listadoToolStripMenuItem
+            // estadisticasDePedidosToolStripMenuItem
             // 
-            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.listadoToolStripMenuItem.Text = "Listado de Pedidos";
-            this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
+            this.estadisticasDePedidosToolStripMenuItem.Name = "estadisticasDePedidosToolStripMenuItem";
+            this.estadisticasDePedidosToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.estadisticasDePedidosToolStripMenuItem.Text = "Estadisticas de Pedidos";
+            this.estadisticasDePedidosToolStripMenuItem.Click += new System.EventHandler(this.estadisticasDePedidosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -149,5 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem reporteDeVentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consolidadoDeComisionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadisticasDePedidosToolStripMenuItem;
     }
 }
