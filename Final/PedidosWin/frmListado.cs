@@ -73,8 +73,9 @@ namespace PedidosWin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Pedido Facturado","Sistema de Pedidos");
-            this.Close();
+            String numero = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+
+            MessageBox.Show("Pedido Facturado numero " + numero, "Sistema de Pedidos");
         }
     }
 }
