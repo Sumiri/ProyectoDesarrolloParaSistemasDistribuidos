@@ -69,7 +69,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Dominio\Cliente.hbm.xml" />
     <Content Include="Articulos.svc" />
-    <Content Include="Clientes.svc" />
+    <Content Include="Clientes.svc">
+      <BrowseToURL>4</BrowseToURL>
+    </Content>
     <EmbeddedResource Include="Dominio\Articulo.hbm.xml" />
     <EmbeddedResource Include="Dominio\Pedido.hbm.xml" />
     <EmbeddedResource Include="Dominio\PedidoDetalle.hbm.xml" />

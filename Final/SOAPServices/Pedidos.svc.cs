@@ -47,7 +47,7 @@ namespace SOAPServices
                 CodUsuarioCreador = codUsuarioCreador,
                 FecCreacion = fecCreacion,
                 CodUsuarioUpdate = codUsuarioUpdate,
-                FecUpdate = fecUpdate
+                FecUpdate = fecUpdate,
             };
             return PedidoDAO.Crear(pedidoACrear);
         }
