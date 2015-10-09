@@ -20,9 +20,7 @@ namespace SOAPServices
                     articuloDAO = new ArticuloDAO();
                 return articuloDAO;
             }
-
         }
-
 
         public Articulo CrearArticulo(string descripcion)
         {

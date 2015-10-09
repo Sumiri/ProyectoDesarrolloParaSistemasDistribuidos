@@ -12,6 +12,7 @@ namespace PedidosWin
 {
     public partial class frmCliente : Form
     {
+       
         public frmCliente()
         {
             InitializeComponent();
@@ -23,8 +24,25 @@ namespace PedidosWin
 
         private void frmCliente_Load(object sender, EventArgs e)
         {
+            //OBTIENE EL LISTADO DE CLIENTES REGISTRADOS
+            //A TRAVES DEL SERVICIO SOAP CLIENTES - ListarClientes()
             ClientesServiceReference.ClientesClient client = new ClientesServiceReference.ClientesClient();
-            dataGridView1.DataSource = client.ListarClientes();
+            dataGridView1.DataSource = client.ListarClientes(); 
+
+            dataGridView1.Columns[0].Visible = false;
+
+            dataGridView1.Columns["RUC"].DisplayIndex = 1;
+            dataGridView1.Columns["RUC"].HeaderText = "Número RUC";
+            dataGridView1.Columns["RUC"].Width = 100;
+            dataGridView1.Columns["RUC"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridView1.Columns["RazonSocial"].DisplayIndex = 0;
+            dataGridView1.Columns["RazonSocial"].HeaderText = "Razón Social";
+            dataGridView1.Columns["RazonSocial"].Width = 200;
+
+            dataGridView1.Columns["Correo"].DisplayIndex = 2;
+            dataGridView1.Columns["Correo"].HeaderText = "Correo Electrónico";
+            dataGridView1.Columns["Correo"].Width = 200;
         }
 
         private void button1_Click(object sender, EventArgs e)

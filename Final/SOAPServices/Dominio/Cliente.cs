@@ -14,6 +14,8 @@ namespace SOAPServices.Dominio
         [DataMember]
         public string RazonSocial { get; set; }
         [DataMember]
+        public string RUC { get; set; }
+        [DataMember]
         public string Correo { get; set; }
     }
 }

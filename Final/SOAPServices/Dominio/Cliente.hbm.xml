@@ -8,6 +8,7 @@
       <generator class="increment" />
     </id>
     <property name="RazonSocial" column="razon_social" />
+    <property name="RUC" column="numero_documento" />
     <property name="Correo" column="correo" />
   </class>
 </hibernate-mapping>

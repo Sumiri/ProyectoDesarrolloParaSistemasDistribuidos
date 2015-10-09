@@ -23,19 +23,6 @@ namespace SOAPServices
 
         }
 
-
-        /*private ClienteDAO ClienteDAO
-        /*{
-            get
-            {
-                if (clienteDAO == null)
-                {
-                    clienteDAO = new ClienteDAO();
-                    return clienteDAO;
-                }
-            }
-        }*/
-
         public Cliente CrearCliente(string razonsocial, string correo)
         {
             Cliente clienteACrear = new Cliente()
