@@ -44,6 +44,8 @@ namespace PedidosWin
             dataGridView1.Columns["Precio"].ValueType = typeof(System.Double);
             dataGridView1.Columns["Precio"].DefaultCellStyle.Format = "#,##0.00";
             dataGridView1.Columns["Precio"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            dataGridView1.Rows[0].Selected = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

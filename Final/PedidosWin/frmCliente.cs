@@ -21,6 +21,7 @@ namespace PedidosWin
         //propiedad
         public string razonSocial { get; set; }
         public string codigoCliente { get; set; }
+        public string rucCliente { get; set; }
 
         private void frmCliente_Load(object sender, EventArgs e)
         {
@@ -43,6 +44,8 @@ namespace PedidosWin
             dataGridView1.Columns["Correo"].DisplayIndex = 2;
             dataGridView1.Columns["Correo"].HeaderText = "Correo Electrónico";
             dataGridView1.Columns["Correo"].Width = 200;
+
+            dataGridView1.Rows[0].Selected = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +53,7 @@ namespace PedidosWin
             //cierra el formulario
             razonSocial = dataGridView1.CurrentRow.Cells["RazonSocial"].Value.ToString();
             codigoCliente = dataGridView1.CurrentRow.Cells["Codigo"].Value.ToString();
+            rucCliente = dataGridView1.CurrentRow.Cells["RUC"].Value.ToString();
             DialogResult = DialogResult.OK;
             this.Close();
         }

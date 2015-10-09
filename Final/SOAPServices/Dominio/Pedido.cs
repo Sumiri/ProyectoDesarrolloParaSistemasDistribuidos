@@ -55,5 +55,6 @@ namespace SOAPServices.Dominio
         public string CodUsuarioUpdate { get; set; }
         [DataMember]
         public DateTime FecUpdate { get; set; }
+
     }
 }

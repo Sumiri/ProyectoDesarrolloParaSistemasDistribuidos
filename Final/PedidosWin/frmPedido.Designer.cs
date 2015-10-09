@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,6 +42,8 @@
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnArticulo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtRUC = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtCodigoCliente = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -61,6 +63,7 @@
             this.txtIGV = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtCodigoArticulo = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -109,7 +112,7 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(70, 44);
+            this.txtCliente.Location = new System.Drawing.Point(70, 43);
             this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.ReadOnly = true;
@@ -168,6 +171,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtRUC);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.txtCodigoCliente);
             this.groupBox1.Location = new System.Drawing.Point(10, 6);
@@ -177,6 +182,23 @@
             this.groupBox1.Size = new System.Drawing.Size(596, 62);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(340, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "R.U.C.";
+            // 
+            // txtRUC
+            // 
+            this.txtRUC.Location = new System.Drawing.Point(385, 37);
+            this.txtRUC.Name = "txtRUC";
+            this.txtRUC.ReadOnly = true;
+            this.txtRUC.Size = new System.Drawing.Size(100, 20);
+            this.txtRUC.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -205,12 +227,14 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(476, 91);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button3.Location = new System.Drawing.Point(383, 17);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 40);
+            this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Agregar Producto";
+            this.button3.Text = "Agregar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -229,6 +253,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(595, 236);
             this.dataGridView1.TabIndex = 14;
             // 
@@ -255,18 +280,18 @@
             // 
             // colPrecio
             // 
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.colPrecio.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.NullValue = null;
+            this.colPrecio.DefaultCellStyle = dataGridViewCellStyle10;
             this.colPrecio.HeaderText = "Precio";
             this.colPrecio.Name = "colPrecio";
             this.colPrecio.ReadOnly = true;
             // 
             // colCantidad
             // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.colCantidad.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Format = "N0";
+            dataGridViewCellStyle11.NullValue = null;
+            this.colCantidad.DefaultCellStyle = dataGridViewCellStyle11;
             this.colCantidad.HeaderText = "Cantidad";
             this.colCantidad.Name = "colCantidad";
             this.colCantidad.ReadOnly = true;
@@ -274,20 +299,22 @@
             // 
             // colTotal
             // 
-            dataGridViewCellStyle3.Format = "C2";
-            this.colTotal.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Format = "C2";
+            this.colTotal.DefaultCellStyle = dataGridViewCellStyle12;
             this.colTotal.HeaderText = "Total";
             this.colTotal.Name = "colTotal";
             this.colTotal.ReadOnly = true;
             // 
             // Guardar
             // 
+            this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardar.ForeColor = System.Drawing.Color.Blue;
             this.Guardar.Location = new System.Drawing.Point(19, 432);
             this.Guardar.Margin = new System.Windows.Forms.Padding(2);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(115, 40);
             this.Guardar.TabIndex = 7;
-            this.Guardar.Text = "Guardar";
+            this.Guardar.Text = "Grabar";
             this.Guardar.UseVisualStyleBackColor = true;
             this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
@@ -356,8 +383,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txtCodigoArticulo);
             this.groupBox2.Controls.Add(this.txtProducto);
+            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Location = new System.Drawing.Point(9, 75);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -365,6 +394,18 @@
             this.groupBox2.Size = new System.Drawing.Size(597, 66);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(488, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Eliminar";
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtCodigoArticulo
             // 
@@ -387,7 +428,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.btnArticulo);
             this.Controls.Add(this.btnCliente);
@@ -403,7 +443,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro de Pedidos";
+            this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.frmPedido_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -448,5 +488,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtRUC;
     }
 }

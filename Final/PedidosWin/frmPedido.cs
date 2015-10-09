@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace PedidosWin
 {
@@ -18,9 +20,35 @@ namespace PedidosWin
             InitializeComponent();
         }
 
+        private DataTable GetDataTableFromDGV(DataGridView dgv)
+        {
+            var dt = new DataTable();
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                if (column.Visible)
+                {
+                    // You could potentially name the column based on the DGV column name (beware of dupes)
+                    // or assign a type based on the data type of the data bound to this DGV column.                    
+                    dt.Columns.Add();
+                }
+            }
+
+            object[] cellValues = new object[dgv.Columns.Count];
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                for (int i = 0; i < row.Cells.Count; i++)
+                {
+                    cellValues[i] = row.Cells[i].Value;
+                }
+                dt.Rows.Add(cellValues);
+            }
+
+            return dt;
+        }
         private void frmPedido_Load(object sender, EventArgs e)
         {
             txtCantidad.Text = "0";
+            //dataGridView1.AllowUserToAddRows = false;
         }
 
         private void MostraFormularioCliente()
@@ -44,9 +72,11 @@ namespace PedidosWin
             {
                 string razonSocial = oFrmCliente.razonSocial;
                 string codigoCliente = oFrmCliente.codigoCliente;
+                string rucCliente = oFrmCliente.rucCliente;
                 
                 txtCliente.Text = razonSocial;
                 txtCodigoCliente.Text = codigoCliente;
+                txtRUC.Text = rucCliente;
             }
         }
 
@@ -97,6 +127,7 @@ namespace PedidosWin
                     txtSubTotal.Text = string.Format("{0:#,##0.00}", total);
                     txtIGV.Text = string.Format("{0:#,##0.00}", total * 0.18);
                     txtTotal.Text = string.Format("{0:#,##0.00}", total * 1.18);
+                    this.button1.Enabled = true;
                 }
                 else
                 {
@@ -143,12 +174,26 @@ namespace PedidosWin
                     string CODUSUARIOUPDATE = "ACTUALIZADOR";
                     DateTime FECUPDATE = Convert.ToDateTime(this.dateTimePicker1.Value);
 
+                    //DataTable dT = GetDataTableFromDGV(dataGridView1);
+                    //DataSet dS = new DataSet();
+                    //dS.Tables.Add(dT);
+                    //dS.WriteXml(@"C:\DSD\ProyectoDSD_v3\PedidosWin\XMLFile1.xml", XmlWriteMode.WriteSchema);
+
+                    //XmlDocument XMLDocu = new XmlDocument();
+                    //XMLDocu.Load("C:\\DSD\\ProyectoDSD_v3\\PedidosWin\\XMLFile1.xml");
+                    //String XMLasString = XMLDocu.OuterXml;
+
                     PedidosWS.PedidosClient proxyP = new PedidosWS.PedidosClient();
                     Pedido resultadoP = proxyP.CrearPedido(CODCOMPANIA, CODSUCURSALCIA, ANO, FECPEDIDO, CODCLIENTE, CODSUCURSAL, CODUSUARIOVENDEDOR, CODDOCUMENTOFACTURACION,
                         NUMEROORDENCOMPRA, CODMONEDA, IMPORTETOTALBRUTO, IMPORTETOTALDESCUENTO, PORCENTAJEIGV, IMPORTETOTALIGV, IMPORTETOTALNETO, CODESTADOATENCION, CODALMACEN,
                         CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
 
                     int NUMEROPEDIDO = resultadoP.NumeroPedido;
+
+
+                        
+
+
                     //variables para completar detalle
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
@@ -190,6 +235,35 @@ namespace PedidosWin
                 MessageBox.Show("Solo se permiten números", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow.Index < dataGridView1.Rows.Count-1)
+            {
+                //Eliminamos fila
+                dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+
+                double total = 0;
+                int rowEscribir = 0;
+                //Renumeramos items
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if ((rowEscribir < dataGridView1.Rows.Count - 1))
+                    {
+                        dataGridView1.Rows[rowEscribir].Cells[0].Value = rowEscribir + 1;
+                        total += Convert.ToDouble(row.Cells["colTotal"].Value);
+                        rowEscribir++;
+                    }
+                }
+                txtSubTotal.Text = string.Format("{0:#,##0.00}", total);
+                txtIGV.Text = string.Format("{0:#,##0.00}", total * 0.18);
+                txtTotal.Text = string.Format("{0:#,##0.00}", total * 1.18);
+            }
+            else
+            {
+                MessageBox.Show("Ningún registro para eliminar", "Sistema de Pedidos");
             }
         }
     }
