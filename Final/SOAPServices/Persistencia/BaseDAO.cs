@@ -8,6 +8,7 @@ namespace SOAPServices.Persistencia
 {
     public class BaseDAO<Entidad, Id>
     {
+
         public Entidad Crear(Entidad entidad)
         {
             using (ISession sesion = NHibernateHelper.ObtenerSesion())
@@ -17,6 +18,7 @@ namespace SOAPServices.Persistencia
             }
             return entidad;
         }
+
         public Entidad Obtener(Id id)
         {
             using (ISession sesion = NHibernateHelper.ObtenerSesion())
@@ -24,6 +26,7 @@ namespace SOAPServices.Persistencia
                 return sesion.Get<Entidad>(id);
             }
         }
+
         public Entidad Modificar(Entidad entidad)
         {
             using (ISession sesion = NHibernateHelper.ObtenerSesion())
@@ -33,6 +36,7 @@ namespace SOAPServices.Persistencia
             }
             return entidad;
         }
+
         public void Eliminar(Entidad entidad)
         {
             using (ISession sesion = NHibernateHelper.ObtenerSesion())
@@ -41,6 +45,7 @@ namespace SOAPServices.Persistencia
                 sesion.Flush();
             }
         }
+
         public ICollection<Entidad> ListarTodos()
         {
             using (ISession sesion = NHibernateHelper.ObtenerSesion())
