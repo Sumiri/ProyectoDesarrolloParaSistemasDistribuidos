@@ -119,6 +119,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\StocksServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmArticulo.resx">
       <DependentUpon>frmArticulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +156,7 @@
     <None Include="Properties\DataSources\SOAPServices.Dominio.FacturaCabecera.datasource" />
     <None Include="Properties\DataSources\SOAPServices.Dominio.Pedido.datasource" />
     <None Include="Properties\DataSources\SOAPServices.Dominio.PedidoDetalle.datasource" />
+    <None Include="Properties\DataSources\SOAPServices.Dominio.Stock.datasource" />
     <None Include="Properties\DataSources\SOAPServices.IClientes.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -201,6 +207,16 @@
     <None Include="Service References\PedidosWS\Pedidos2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\StocksServiceReference\Stocks.wsdl" />
+    <None Include="Service References\StocksServiceReference\Stocks.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StocksServiceReference\Stocks1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StocksServiceReference\Stocks2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -219,6 +235,7 @@
     <WCFMetadataStorage Include="Service References\ClientesServiceReference\" />
     <WCFMetadataStorage Include="Service References\PedidoDetallesWS\" />
     <WCFMetadataStorage Include="Service References\PedidosWS\" />
+    <WCFMetadataStorage Include="Service References\StocksServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ClientesServiceReference\Clientes.disco" />
@@ -293,6 +310,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\StocksServiceReference\Stocks.disco" />
+    <None Include="Service References\StocksServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\StocksServiceReference\configuration.svcinfo" />
+    <None Include="Service References\StocksServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

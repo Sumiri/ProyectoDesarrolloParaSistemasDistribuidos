@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientesREST.svc" />
-    <Content Include="Facturas.svc" />
     <Content Include="PedidosREST.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -68,14 +67,9 @@
     <Compile Include="ClientesREST.svc.cs">
       <DependentUpon>ClientesREST.svc</DependentUpon>
     </Compile>
-    <Compile Include="Dominio\Factura.cs" />
     <Compile Include="Dominio\Pedido.cs" />
     <Compile Include="Dominio\Cliente.cs" />
-    <Compile Include="Facturas.svc.cs">
-      <DependentUpon>Facturas.svc</DependentUpon>
-    </Compile>
     <Compile Include="IClientesREST.cs" />
-    <Compile Include="IFacturas.cs" />
     <Compile Include="IPedidosREST.cs" />
     <Compile Include="PedidosREST.svc.cs">
       <DependentUpon>PedidosREST.svc</DependentUpon>

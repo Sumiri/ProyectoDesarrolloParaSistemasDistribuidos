@@ -54,7 +54,7 @@ namespace SOAPServices
 
         public List<Articulo> ListarArticulos()
         {
-            return ArticuloDAO.ListarTodos().ToList();
+            return ArticuloDAO.ListarTodos().ToList();               
         }
     }
 }

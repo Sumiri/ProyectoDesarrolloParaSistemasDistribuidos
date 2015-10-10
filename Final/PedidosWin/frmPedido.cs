@@ -101,7 +101,7 @@ namespace PedidosWin
         {
             if (txtCodigoArticulo.Text == "")
             {
-                MessageBox.Show("Debe seleccionar el Producto", "Sistema de Pedidos");
+                MessageBox.Show("Debe seleccionar el Producto", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -131,7 +131,7 @@ namespace PedidosWin
                 }
                 else
                 {
-                    MessageBox.Show("Debe indicar la cantidad del Producto", "Sistema de Pedidos");
+                    MessageBox.Show("Debe indicar la cantidad del Producto", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
         }
@@ -140,90 +140,108 @@ namespace PedidosWin
         {
             if (txtCodigoCliente.Text == "")
             {
-                MessageBox.Show("Debe seleccionar el Cliente", "Sistema de Pedidos");
+                MessageBox.Show("Debe seleccionar el Cliente", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
                 if (dataGridView1.Rows.Count == 1)
                 {
-                    MessageBox.Show("Debe agregar Productos al Pedido", "Sistema de Pedidos");
+                    MessageBox.Show("Debe agregar Productos al Pedido", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    //variables para completar cabecera
-                    int CODCOMPANIA = 1;
-                    int CODSUCURSALCIA = 1;
-                    int ANO = 2015;
-                    DateTime FECPEDIDO = Convert.ToDateTime(this.dateTimePicker1.Value);
-                    int CODCLIENTE = Convert.ToInt32(txtCodigoCliente.Text);
-                    int CODSUCURSAL = 1;
-                    string CODUSUARIOVENDEDOR = "VENDEDOR";
-                    int CODDOCUMENTOFACTURACION = 1;
-                    string NUMEROORDENCOMPRA = "A001";
-                    int CODMONEDA = 1;
-                    double IMPORTETOTALBRUTO = Convert.ToDouble(txtSubTotal.Text);
-                    double IMPORTETOTALDESCUENTO = 0.00;
-                    double PORCENTAJEIGV = 18.00;
-                    double IMPORTETOTALIGV = Convert.ToDouble(txtIGV.Text);
-                    double IMPORTETOTALNETO = Convert.ToDouble(txtTotal.Text);
-                    int CODESTADOATENCION = 1;
-                    int CODALMACEN = 1;
-                    int CODESTADOREGISTRO = 1;
-                    string CODUSUARIOCREADOR = "CREADOR";
-                    DateTime FECCREACION = Convert.ToDateTime(this.dateTimePicker1.Value);
-                    string CODUSUARIOUPDATE = "ACTUALIZADOR";
-                    DateTime FECUPDATE = Convert.ToDateTime(this.dateTimePicker1.Value);
-
-                    //DataTable dT = GetDataTableFromDGV(dataGridView1);
-                    //DataSet dS = new DataSet();
-                    //dS.Tables.Add(dT);
-                    //dS.WriteXml(@"C:\DSD\ProyectoDSD_v3\PedidosWin\XMLFile1.xml", XmlWriteMode.WriteSchema);
-
-                    //XmlDocument XMLDocu = new XmlDocument();
-                    //XMLDocu.Load("C:\\DSD\\ProyectoDSD_v3\\PedidosWin\\XMLFile1.xml");
-                    //String XMLasString = XMLDocu.OuterXml;
-
-                    PedidosWS.PedidosClient proxyP = new PedidosWS.PedidosClient();
-                    Pedido resultadoP = proxyP.CrearPedido(CODCOMPANIA, CODSUCURSALCIA, ANO, FECPEDIDO, CODCLIENTE, CODSUCURSAL, CODUSUARIOVENDEDOR, CODDOCUMENTOFACTURACION,
-                        NUMEROORDENCOMPRA, CODMONEDA, IMPORTETOTALBRUTO, IMPORTETOTALDESCUENTO, PORCENTAJEIGV, IMPORTETOTALIGV, IMPORTETOTALNETO, CODESTADOATENCION, CODALMACEN,
-                        CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
-
-                    int NUMEROPEDIDO = resultadoP.NumeroPedido;
-
-
-                        
-
-
-                    //variables para completar detalle
-                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    try
                     {
-                        int NUMEROITEM = Convert.ToInt32(row.Cells["colItem"].Value);
-
-                        if (NUMEROITEM == 0)
+                        //Verificamos existencia de Stocks
+                        foreach (DataGridViewRow row in dataGridView1.Rows)
                         {
-                            break;
+                            int NUMEROITEM = Convert.ToInt32(row.Cells["colItem"].Value);
+
+                            if (NUMEROITEM == 0)
+                            {
+                                break;
+                            }
+
+                            int CodigoItemPedido = Convert.ToInt32(row.Cells["colCodigo"].Value);
+                            int CantidadItemPedido = Convert.ToInt32(row.Cells["colCantidad"].Value);
+                            
+                            StocksServiceReference.StocksClient proxyS = new StocksServiceReference.StocksClient();
+                            Stock resultadoS = proxyS.ObtenerStock(CodigoItemPedido);
+                            
+                            if (CantidadItemPedido > resultadoS.StockActual)
+                            {
+                                throw new System.ArgumentException("Producto : " + row.Cells["colDescripcion"].Value + "\r" +"\n"+
+                                    "No hay Stock suficiente para completar el pedido"  + "\r" +"\n"+
+                                    "Stock Actual : "+ Convert.ToString(resultadoS.StockActual) + " Unidades");   
+                            }                            
                         }
+                        //variables para completar cabecera
+                        int CODCOMPANIA = 1;
+                        int CODSUCURSALCIA = 1;
+                        int ANO = 2015;
+                        DateTime FECPEDIDO = Convert.ToDateTime(this.dateTimePicker1.Value);
+                        int CODCLIENTE = Convert.ToInt32(txtCodigoCliente.Text);
+                        int CODSUCURSAL = 1;
+                        string CODUSUARIOVENDEDOR = "VENDEDOR";
+                        int CODDOCUMENTOFACTURACION = 1;
+                        string NUMEROORDENCOMPRA = "A001";
+                        int CODMONEDA = 1;
+                        double IMPORTETOTALBRUTO = Convert.ToDouble(txtSubTotal.Text);
+                        double IMPORTETOTALDESCUENTO = 0.00;
+                        double PORCENTAJEIGV = 18.00;
+                        double IMPORTETOTALIGV = Convert.ToDouble(txtIGV.Text);
+                        double IMPORTETOTALNETO = Convert.ToDouble(txtTotal.Text);
+                        int CODESTADOATENCION = 1;
+                        int CODALMACEN = 1;
+                        int CODESTADOREGISTRO = 1;
+                        string CODUSUARIOCREADOR = "CREADOR";
+                        DateTime FECCREACION = Convert.ToDateTime(this.dateTimePicker1.Value);
+                        string CODUSUARIOUPDATE = "ACTUALIZADOR";
+                        DateTime FECUPDATE = Convert.ToDateTime(this.dateTimePicker1.Value);
 
-                        int CODITEMARTICULO = Convert.ToInt32(row.Cells["colCodigo"].Value);
-                        int UNIDADESPEDIDAS = Convert.ToInt32(row.Cells["colCantidad"].Value);
-                        int UNIDADESCOMPROMETIDAS = Convert.ToInt32(row.Cells["colCantidad"].Value);
-                        double IMPORTEPRECIOUNITARIOSIGV = Convert.ToDouble(row.Cells["colPrecio"].Value);
-                        double IMPORTEPRECIOUNITARIOCIGV = Convert.ToDouble(row.Cells["colPrecio"].Value) * 1.18;
-                        double IMPORTESUBTOTALBRUTO = Convert.ToDouble(row.Cells["colTotal"].Value);
-                        double PORCENTAJEDESCUENTO = 0.00;
-                        double IMPORTESUBTOTALDESCUENTO = 0.00;
-                        double IMPORTESUBTOTALNETO = Convert.ToDouble(row.Cells["colTotal"].Value);
+                        PedidosWS.PedidosClient proxyP = new PedidosWS.PedidosClient();
+                        Pedido resultadoP = proxyP.CrearPedido(CODCOMPANIA, CODSUCURSALCIA, ANO, FECPEDIDO, CODCLIENTE, CODSUCURSAL, CODUSUARIOVENDEDOR, CODDOCUMENTOFACTURACION,
+                            NUMEROORDENCOMPRA, CODMONEDA, IMPORTETOTALBRUTO, IMPORTETOTALDESCUENTO, PORCENTAJEIGV, IMPORTETOTALIGV, IMPORTETOTALNETO, CODESTADOATENCION, CODALMACEN,
+                            CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
 
-                        PedidoDetallesWS.PedidoDetallesClient proxyD = new PedidoDetallesWS.PedidoDetallesClient();
-                        PedidoDetalle resultadoD = proxyD.CrearPedidoDetalle(CODCOMPANIA, CODSUCURSALCIA, ANO, NUMEROPEDIDO, NUMEROITEM, CODITEMARTICULO, UNIDADESPEDIDAS,
-                            UNIDADESCOMPROMETIDAS, IMPORTEPRECIOUNITARIOSIGV, IMPORTEPRECIOUNITARIOCIGV, IMPORTESUBTOTALBRUTO, PORCENTAJEDESCUENTO, IMPORTESUBTOTALDESCUENTO,
-                            IMPORTESUBTOTALNETO, CODESTADOATENCION, CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
+                        int NUMEROPEDIDO = resultadoP.NumeroPedido;
+
+                        //variables para completar detalle
+                        foreach (DataGridViewRow row in dataGridView1.Rows)
+                        {
+                            int NUMEROITEM = Convert.ToInt32(row.Cells["colItem"].Value);
+
+                            if (NUMEROITEM == 0)
+                            {
+                                break;
+                            }
+
+                            int CODITEMARTICULO = Convert.ToInt32(row.Cells["colCodigo"].Value);
+                            int UNIDADESPEDIDAS = Convert.ToInt32(row.Cells["colCantidad"].Value);
+                            int UNIDADESCOMPROMETIDAS = Convert.ToInt32(row.Cells["colCantidad"].Value);
+                            double IMPORTEPRECIOUNITARIOSIGV = Convert.ToDouble(row.Cells["colPrecio"].Value);
+                            double IMPORTEPRECIOUNITARIOCIGV = Convert.ToDouble(row.Cells["colPrecio"].Value) * 1.18;
+                            double IMPORTESUBTOTALBRUTO = Convert.ToDouble(row.Cells["colTotal"].Value);
+                            double PORCENTAJEDESCUENTO = 0.00;
+                            double IMPORTESUBTOTALDESCUENTO = 0.00;
+                            double IMPORTESUBTOTALNETO = Convert.ToDouble(row.Cells["colTotal"].Value);
+
+                            PedidoDetallesWS.PedidoDetallesClient proxyD = new PedidoDetallesWS.PedidoDetallesClient();
+                            PedidoDetalle resultadoD = proxyD.CrearPedidoDetalle(CODCOMPANIA, CODSUCURSALCIA, ANO, NUMEROPEDIDO, NUMEROITEM, CODITEMARTICULO, UNIDADESPEDIDAS,
+                                UNIDADESCOMPROMETIDAS, IMPORTEPRECIOUNITARIOSIGV, IMPORTEPRECIOUNITARIOCIGV, IMPORTESUBTOTALBRUTO, PORCENTAJEDESCUENTO, IMPORTESUBTOTALDESCUENTO,
+                                IMPORTESUBTOTALNETO, CODESTADOATENCION, CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
+                        }
+                        MessageBox.Show("Pedido Registrado", "Sistema de Pedidos");
+                        this.Close();
+
+                        frmListado oFrmListado = new frmListado();
+                        oFrmListado.Show();
                     }
-                    MessageBox.Show("Pedido Registrado", "Sistema de Pedidos");
-                    this.Close();
-
-                    frmListado oFrmListado = new frmListado();
-                    oFrmListado.Show();
+                    catch (Exception ex)
+                    {
+                        //MessageBox.Show(" " +ex, "Sistema de Pedidos");                        
+                        MessageBox.Show(ex.Message, "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
                 }
             }
         }
@@ -263,7 +281,7 @@ namespace PedidosWin
             }
             else
             {
-                MessageBox.Show("Ningún registro para eliminar", "Sistema de Pedidos");
+                MessageBox.Show("Ningún registro para eliminar", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

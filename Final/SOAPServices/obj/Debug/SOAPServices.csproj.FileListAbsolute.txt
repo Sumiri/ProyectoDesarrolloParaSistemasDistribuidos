@@ -1,0 +1,58 @@
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\desarrollo para sistemas distribuidos\laboratorios\repaso lab 1\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.dll.config
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+C:\DSD\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+C:\DSD\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+C:\DSD\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+D:\DSDProyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll.config
+D:\DSDProyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+D:\DSDProyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+D:\DSDProyecto\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+D:\DSDProyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+D:\DSDProyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+D:\DSDProyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+D:\DSDProyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+E:\proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll.config
+E:\proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+E:\proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+E:\proyecto\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+E:\proyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+E:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+E:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+D:\proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.dll
+D:\proyecto\ProyectoDSD\SOAPServices\bin\SOAPServices.pdb
+D:\proyecto\ProyectoDSD\SOAPServices\bin\Iesi.Collections.dll
+D:\proyecto\ProyectoDSD\SOAPServices\bin\NHibernate.dll
+D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
+D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.dll
+D:\proyecto\ProyectoDSD\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.dll.config
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\Iesi.Collections.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\bin\NHibernate.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\obj\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD_v2\SOAPServices\obj\Debug\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v3\SOAPServices\bin\SOAPServices.dll.config
+C:\DSD\ProyectoDSD_v3\SOAPServices\bin\SOAPServices.dll
+C:\DSD\ProyectoDSD_v3\SOAPServices\bin\SOAPServices.pdb
+C:\DSD\ProyectoDSD_v3\SOAPServices\bin\Iesi.Collections.dll
+C:\DSD\ProyectoDSD_v3\SOAPServices\bin\NHibernate.dll
+C:\DSD\ProyectoDSD_v3\SOAPServices\obj\Debug\SOAPServices.dll
+C:\DSD\ProyectoDSD_v3\SOAPServices\obj\Debug\SOAPServices.pdb
