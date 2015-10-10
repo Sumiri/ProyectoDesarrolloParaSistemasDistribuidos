@@ -130,3 +130,25 @@ C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
 C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources
 C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
 C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\PedidosWin.exe.config
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\PedidosWin.exe
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\PedidosWin.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\SOAPServices.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\NHibernate.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\Iesi.Collections.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\bin\Debug\SOAPServices.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.csprojResolveAssemblyReference.cache
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmArticulo.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmCliente.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmEstadisticas.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmListado.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.exe
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmComisiones.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmEstadisticas.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmListado.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources

@@ -39,10 +39,16 @@ namespace PedidosWin
 
         }
 
-        private void estadisticasDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void estadísticasDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
             ofrmEstadisticas.Show();
+        }
+
+        private void consolidadoDeComisionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmComisiones ofrmComisiones = new frmComisiones();
+            ofrmComisiones.Show();
         }
     }
 }

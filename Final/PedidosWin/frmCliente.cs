@@ -30,6 +30,8 @@ namespace PedidosWin
             ClientesServiceReference.ClientesClient client = new ClientesServiceReference.ClientesClient();
             dataGridView1.DataSource = client.ListarClientes(); 
 
+            dataGridView1.Columns[0].Visible = false;
+
             dataGridView1.Columns["RUC"].DisplayIndex = 1;
             dataGridView1.Columns["RUC"].HeaderText = "Número RUC";
             dataGridView1.Columns["RUC"].Width = 100;
@@ -43,8 +45,7 @@ namespace PedidosWin
             dataGridView1.Columns["Correo"].HeaderText = "Correo Electrónico";
             dataGridView1.Columns["Correo"].Width = 200;
 
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.CurrentCell = dataGridView1.Rows[0].Cells[1];
+            dataGridView1.Rows[0].Selected = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

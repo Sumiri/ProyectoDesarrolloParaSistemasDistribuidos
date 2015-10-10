@@ -127,25 +127,6 @@ namespace PedidosWin
                 {
                     try
                     {
-                        //Verificamos datos del cliente
-                        int CodCliente = Convert.ToInt32(txtCodigoCliente.Text);
-                        ClientesServiceReference.ClientesClient proxyCliente = new ClientesServiceReference.ClientesClient();
-                        Cliente resultadoCliente = proxyCliente.ObtenerCliente(CodCliente);
-
-                        VerificarRUCServiceReference.VerificaDocumentoClient proxyRUC = new VerificarRUCServiceReference.VerificaDocumentoClient();
-                        bool validaRUC = proxyRUC.VerificaRUC(resultadoCliente.RUC);
-
-
-                        
-                        //bool validaRUC = ValidateIdentificationDocumentPeru(resultadoCliente.RUC);
-                        
-                        if (!validaRUC)
-                        {
-                            throw new System.ArgumentException("Cliente : " + Convert.ToString(resultadoCliente.RazonSocial) +"\r" + "\n" +
-                            "No tiene número de RUC válido" +"\r" + "\n" +
-                            "Por favor verificar en Sunat");   
-                        }
-
                         //Verificamos existencia de Stocks
                         foreach (DataGridViewRow row in dataGridView1.Rows)
                         {
@@ -159,14 +140,14 @@ namespace PedidosWin
                             int CodigoItemPedido = Convert.ToInt32(row.Cells["colCodigo"].Value);
                             int CantidadItemPedido = Convert.ToInt32(row.Cells["colCantidad"].Value);
                             
-                            StocksServiceReference.StocksClient proxyStock = new StocksServiceReference.StocksClient();
-                            Stock resultadoStock = proxyStock.ObtenerStock(CodigoItemPedido);
-
-                            if (CantidadItemPedido > resultadoStock.StockActual)
+                            StocksServiceReference.StocksClient proxyS = new StocksServiceReference.StocksClient();
+                            Stock resultadoS = proxyS.ObtenerStock(CodigoItemPedido);
+                            
+                            if (CantidadItemPedido > resultadoS.StockActual)
                             {
                                 throw new System.ArgumentException("Producto : " + row.Cells["colDescripcion"].Value + "\r" +"\n"+
                                     "No hay Stock suficiente para completar el pedido"  + "\r" +"\n"+
-                                    "Stock Actual : " + Convert.ToString(resultadoStock.StockActual) + " Unidades");   
+                                    "Stock Actual : "+ Convert.ToString(resultadoS.StockActual) + " Unidades");   
                             }                            
                         }
                         //variables para completar cabecera
@@ -193,12 +174,12 @@ namespace PedidosWin
                         string CODUSUARIOUPDATE = "ACTUALIZADOR";
                         DateTime FECUPDATE = Convert.ToDateTime(this.dateTimePicker1.Value);
 
-                        PedidosWS.PedidosClient proxyPedido = new PedidosWS.PedidosClient();
-                        Pedido resultadoPedido = proxyPedido.CrearPedido(CODCOMPANIA, CODSUCURSALCIA, ANO, FECPEDIDO, CODCLIENTE, CODSUCURSAL, CODUSUARIOVENDEDOR, CODDOCUMENTOFACTURACION,
+                        PedidosWS.PedidosClient proxyP = new PedidosWS.PedidosClient();
+                        Pedido resultadoP = proxyP.CrearPedido(CODCOMPANIA, CODSUCURSALCIA, ANO, FECPEDIDO, CODCLIENTE, CODSUCURSAL, CODUSUARIOVENDEDOR, CODDOCUMENTOFACTURACION,
                             NUMEROORDENCOMPRA, CODMONEDA, IMPORTETOTALBRUTO, IMPORTETOTALDESCUENTO, PORCENTAJEIGV, IMPORTETOTALIGV, IMPORTETOTALNETO, CODESTADOATENCION, CODALMACEN,
                             CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
 
-                        int NUMEROPEDIDO = resultadoPedido.NumeroPedido;
+                        int NUMEROPEDIDO = resultadoP.NumeroPedido;
 
                         //variables para completar detalle
                         foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -220,17 +201,17 @@ namespace PedidosWin
                             double IMPORTESUBTOTALDESCUENTO = 0.00;
                             double IMPORTESUBTOTALNETO = Convert.ToDouble(row.Cells["colTotal"].Value);
 
-                            PedidoDetallesWS.PedidoDetallesClient proxyDetalle = new PedidoDetallesWS.PedidoDetallesClient();
-                            PedidoDetalle resultadoDetalle = proxyDetalle.CrearPedidoDetalle(CODCOMPANIA, CODSUCURSALCIA, ANO, NUMEROPEDIDO, NUMEROITEM, CODITEMARTICULO, UNIDADESPEDIDAS,
+                            PedidoDetallesWS.PedidoDetallesClient proxyD = new PedidoDetallesWS.PedidoDetallesClient();
+                            PedidoDetalle resultadoD = proxyD.CrearPedidoDetalle(CODCOMPANIA, CODSUCURSALCIA, ANO, NUMEROPEDIDO, NUMEROITEM, CODITEMARTICULO, UNIDADESPEDIDAS,
                                 UNIDADESCOMPROMETIDAS, IMPORTEPRECIOUNITARIOSIGV, IMPORTEPRECIOUNITARIOCIGV, IMPORTESUBTOTALBRUTO, PORCENTAJEDESCUENTO, IMPORTESUBTOTALDESCUENTO,
                                 IMPORTESUBTOTALNETO, CODESTADOATENCION, CODESTADOREGISTRO, CODUSUARIOCREADOR, FECCREACION, CODUSUARIOUPDATE, FECUPDATE);
 
                             //Actualizamos existencia de Stocks
-                            StocksServiceReference.StocksClient proxyStock = new StocksServiceReference.StocksClient();
-                            Stock resultadoS = proxyStock.ObtenerStock(CODITEMARTICULO);
-                            Stock actualizaS = proxyStock.ModificarStock(CODITEMARTICULO, resultadoS.StockActual - UNIDADESPEDIDAS);
+                            StocksServiceReference.StocksClient proxyS = new StocksServiceReference.StocksClient();
+                            Stock resultadoS = proxyS.ObtenerStock(CODITEMARTICULO);
+                            Stock actualizaS = proxyS.ModificarStock(CODITEMARTICULO, resultadoS.StockActual - UNIDADESPEDIDAS);
                         }
-                        MessageBox.Show("Pedido Registrado OK!", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Pedido Registrado", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
 
                         frmListado oFrmListado = new frmListado();
@@ -282,6 +263,5 @@ namespace PedidosWin
                 MessageBox.Show("Ningún registro para eliminar", "Sistema de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
     }
 }
