@@ -49,8 +49,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -206,6 +209,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RESTServices\RESTServices.csproj">
+      <Project>{95546723-f836-4aef-b1fb-973e4111b483}</Project>
+      <Name>RESTServices</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOAPServices\SOAPServices.csproj">
       <Project>{4498e9cd-e827-4d13-a3f0-22cace94329f}</Project>
       <Name>SOAPServices</Name>

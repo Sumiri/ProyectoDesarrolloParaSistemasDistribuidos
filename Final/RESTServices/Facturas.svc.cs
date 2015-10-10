@@ -1,8 +1,12 @@
-﻿using System;
+﻿using RESTServices.Dominio;
+using RESTServices.Persistencia;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 
 namespace RESTServices
@@ -10,19 +14,24 @@ namespace RESTServices
     
     public class Facturas : IFacturas
     {
-    
+        private FacturaDAO dao = new FacturaDAO();
 
-        public Dominio.Factura CrearPedido(Dominio.Factura facturaACrear)
+        public Factura CrearFactura(Factura facturaACrear)
         {
-            throw new NotImplementedException();
+            if ("11".Equals(facturaACrear.Numero))
+            {
+                throw new WebFaultException<string>(
+                    "Cliente moroso", HttpStatusCode.HttpVersionNotSupported);
+            }
+            return dao.Crear(facturaACrear);
         }
 
-        public Dominio.Factura ObtenerPedido(string numero)
+        public Factura ObtenerFactura(string numero)
         {
-            throw new NotImplementedException();
+            return dao.Obtener(numero);
         }
 
-        public Dominio.Factura ModificarFactura(Dominio.Factura facturaAModificar)
+        public Factura ModificarFactura(Factura facturaAModificar)
         {
             throw new NotImplementedException();
         }
@@ -32,12 +41,19 @@ namespace RESTServices
             throw new NotImplementedException();
         }
 
-        public List<Dominio.Pedido> ListarFacturas()
+        public List<Factura> ListarFacturas()
         {
             throw new NotImplementedException();
         }
 
-        public List<Dominio.Pedido> ListarFacturas2(string numero)
+        public List<Factura> ListarFacturas2(string numero)
+        {
+            throw new NotImplementedException();
+        }
+
+      
+
+        List<Pedido> IFacturas.ListarFacturas2(string numero)
         {
             throw new NotImplementedException();
         }

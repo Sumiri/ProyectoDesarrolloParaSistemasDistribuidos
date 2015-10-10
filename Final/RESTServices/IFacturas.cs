@@ -15,11 +15,11 @@ namespace RESTServices
     {
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "Facturas", ResponseFormat = WebMessageFormat.Json)]
-        Factura CrearPedido(Factura facturaACrear);
+        Factura CrearFactura(Factura facturaACrear);
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "Facturas/{numero}", ResponseFormat = WebMessageFormat.Json)]
-        Factura ObtenerPedido(string numero);
+        Factura ObtenerFactura(string numero);
 
         [OperationContract]
         [WebInvoke(Method = "PUT", UriTemplate = "Facturas", ResponseFormat = WebMessageFormat.Json)]
@@ -29,9 +29,7 @@ namespace RESTServices
         [WebInvoke(Method = "DELETE", UriTemplate = "Facturas/{numero}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         void EliminarFactura(string numero);
 
-        [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "Facturas", ResponseFormat = WebMessageFormat.Xml)]
-        List<Pedido> ListarFacturas();
+   
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "ListarPedidos2/{numero}", ResponseFormat = WebMessageFormat.Xml)]
         List<Pedido> ListarFacturas2(string numero);

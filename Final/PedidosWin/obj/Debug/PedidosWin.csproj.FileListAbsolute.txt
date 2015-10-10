@@ -130,3 +130,5 @@ D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.exe
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.pdb
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\bin\Debug\RESTServices.dll
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\bin\Debug\RESTServices.pdb

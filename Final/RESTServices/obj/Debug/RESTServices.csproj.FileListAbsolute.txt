@@ -11,6 +11,6 @@ C:\DSD\ProyectoDSD_v3\RESTServices\bin\RESTServices.pdb
 C:\DSD\ProyectoDSD_v3\RESTServices\obj\Debug\RESTServices.pdb
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\bin\RESTServices.dll
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\bin\RESTServices.pdb
-D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\obj\Debug\RESTServices.dll
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\obj\Debug\RESTServices.pdb
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache

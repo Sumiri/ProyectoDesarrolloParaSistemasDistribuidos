@@ -12,16 +12,17 @@ namespace RESTServices.Dominio
         [DataMember]
         public string Numero { get; set; }
         [DataMember]
-        public string Anho { get; set; }
-        [DataMember]
         public string Fecha { get; set; }
         [DataMember]
         public string Cliente { get; set; }
         [DataMember]
-        public string Direccion { get; set; }
+        public string ImporteBruto { get; set; }
         [DataMember]
-        public string Moneda { get; set; }
+        public string ImporteVenta { get; set; }
         [DataMember]
-        public string Importe { get; set; }
+        public string ImporteIGV { get; set; }
+        [DataMember]
+        public string ImporteTotalVenta { get; set; }
+       
     }
 }

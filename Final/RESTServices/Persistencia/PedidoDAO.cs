@@ -36,7 +36,7 @@ namespace RESTServices.Persistencia
                             {
                                 Numero = (string)Convert.ToString(resultado["NUMERO_PEDIDO"]),
                                 Fecha = (string)Convert.ToString(resultado["FEC_PEDIDO"]),
-                                Cliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
+                                CodCliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
                                 Moneda = (string)Convert.ToString(resultado["COD_MONEDA"]),
                                 Importe = (string)Convert.ToString(resultado["IMPORTE_TOTAL_NETO"])
                             };
@@ -97,7 +97,7 @@ namespace RESTServices.Persistencia
                             {
                                 Numero = (string)Convert.ToString(resultado["NUMERO_PEDIDO"]),
                                 Fecha = (string)Convert.ToString(resultado["FEC_PEDIDO"]),
-                                Cliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
+                                CodCliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
                                 Moneda = (string)Convert.ToString(resultado["COD_MONEDA"]),
                                 Importe = (string)Convert.ToString(resultado["IMPORTE_TOTAL_NETO"])
                             };
@@ -150,7 +150,7 @@ namespace RESTServices.Persistencia
                                 Numero = (string)Convert.ToString(resultado["NUMERO_PEDIDO"]),
                                 Anho = (string)Convert.ToString(resultado["ANO"]),
                                 Fecha = (string)Convert.ToString(resultado["FEC_PEDIDO"]),
-                                Cliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
+                                CodCliente = (string)Convert.ToString(resultado["COD_CLIENTE"]),
                                 Moneda = (string)Convert.ToString(resultado["COD_MONEDA"]),
                                 Importe = (string)Convert.ToString(resultado["IMPORTE_TOTAL_NETO"])
                             };

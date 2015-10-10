@@ -49,6 +49,25 @@ namespace PedidosTest
             Assert.AreEqual("2", pedidoModificado.Moneda);
         }
 
+        [TestMethod]
+        public void Test_Facturar()
+        {
+            
+            string postdata = "{\"Numero\":\"8\",\"Fecha\":\"01/01/2015\",\"Cliente\":\"9\",\"ImporteBruto\":\"12\",\"ImporteVenta\":\"24\",\"ImporteIGV\":\"111\",\"ImporteTotalVenta\":\"100\"}";
+            byte[] data = Encoding.UTF8.GetBytes(postdata);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:23440/Facturas.svc/Facturas");
+            req.Method = "POST";
+            req.ContentLength = data.Length;
+            req.ContentType = "application/json";
+            var reqStream = req.GetRequestStream();
+            reqStream.Write(data, 0, data.Length);
+            HttpWebResponse res = (HttpWebResponse)req.GetResponse();
+            StreamReader reader = new StreamReader(res.GetResponseStream());
+            string compraJson = reader.ReadToEnd();
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            RESTServices.Dominio.Factura mensaje = js.Deserialize<RESTServices.Dominio.Factura>(compraJson);
+            Assert.AreEqual("8", mensaje.Numero);
+        }
 
         [TestMethod]
         public void TestEliminar()
