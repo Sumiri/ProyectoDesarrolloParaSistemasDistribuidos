@@ -11,7 +11,9 @@ namespace RESTServices.Persistencia
         {
             get
             {
-                return "Data Source=localhost\\SQLEXPRESS;Initial Catalog=BD_PEDIDOS;Integrated Security=True";
+                //return "Data Source=localhost\\SQLEXPRESS;Initial Catalog=BD_PEDIDOS;Integrated Security=True";
+                return "Server=JAIME-PC\\SQL2008R2;Database=BD_Pedidos;User Id=jgutierrez; Password=xzfqxt";
+
             }
         }
     }

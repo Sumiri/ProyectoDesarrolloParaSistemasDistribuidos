@@ -148,3 +148,7 @@ E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\
 E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
 E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.exe
 E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosWin\obj\Debug\PedidosWin.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmComisiones.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmEstadisticas.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmListado.resources
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources

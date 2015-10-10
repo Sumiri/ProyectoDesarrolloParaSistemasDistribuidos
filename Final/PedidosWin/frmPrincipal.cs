@@ -44,5 +44,11 @@ namespace PedidosWin
             frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
             ofrmEstadisticas.Show();
         }
+
+        private void consolidadoDeComisionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmComisiones ofrmComisiones = new frmComisiones();
+            ofrmComisiones.Show();
+        }
     }
 }
