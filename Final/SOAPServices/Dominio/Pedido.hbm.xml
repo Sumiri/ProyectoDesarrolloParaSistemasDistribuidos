@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="SOAPServices"
+                   namespace="SOAPServices.Dominio"
+                   default-lazy="false">
+  <class name="Pedido" table="Pedido">
+    <id name="NumeroPedido" column="Numero_Pedido">
+      <generator class="increment" />
+    </id>
+    <property name="CodCompania" column="Cod_Compania" />
+    <property name="CodSucursalCia" column="Cod_Sucursal_Cia" />
+    <property name="Ano" column="Ano" />
+    <property name="FecPedido" column="Fec_Pedido" />
+    <property name="CodCliente" column="Cod_Cliente" />
+    <property name="CodSucursal" column="Cod_Sucursal" />
+    <property name="CodUsuarioVendedor" column="Cod_Usuario_Vendedor" />
+    <property name="CodDocumentoFacturacion" column="Cod_Documento_Facturacion" />
+    <property name="NumeroOrdenCompra" column="Numero_Orden_Compra" />
+    <property name="CodMoneda" column="Cod_Moneda" />
+    <property name="ImporteTotalBruto" column="Importe_Total_Bruto" />
+    <property name="ImporteTotalDescuento" column="Importe_Total_Descuento" />
+    <property name="PorcentajeIGV" column="Porcentaje_IGV" />
+    <property name="ImporteTotalIGV" column="Importe_Total_IGV" />
+    <property name="ImporteTotalNeto" column="Importe_Total_Neto" />
+    <property name="CodEstadoAtencion" column="Cod_Estado_Atencion" />
+    <property name="CodAlmacen" column="Cod_Almacen" />
+    <property name="CodEstadoRegistro" column="Cod_Estado_Registro" />
+    <property name="CodUsuarioCreador" column="Cod_Usuario_Creador" />
+    <property name="FecCreacion" column="Fec_Creacion" />
+    <property name="CodUsuarioUpdate" column="Cod_Usuario_Update" />
+    <property name="FecUpdate" column="Fec_Update" />
+  </class>
+</hibernate-mapping>

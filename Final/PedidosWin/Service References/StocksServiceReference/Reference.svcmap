@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="acf66937-3e0b-4b45-be68-d721085fcc9a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:16224/Stocks.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Stocks.xsd" MetadataType="Schema" ID="38c27532-1a30-406c-92f9-d2949bf0e14e" SourceId="1" SourceUrl="http://localhost:16224/Stocks.svc?xsd=xsd1" />
+    <MetadataFile FileName="Stocks.disco" MetadataType="Disco" ID="634e0612-31ba-421c-9311-db1a976a0ca1" SourceId="1" SourceUrl="http://localhost:16224/Stocks.svc?disco" />
+    <MetadataFile FileName="Stocks1.xsd" MetadataType="Schema" ID="8a4a036a-c345-4187-8776-9cc343f9875b" SourceId="1" SourceUrl="http://localhost:16224/Stocks.svc?xsd=xsd0" />
+    <MetadataFile FileName="Stocks.wsdl" MetadataType="Wsdl" ID="46d891bf-e403-48d5-b3d8-bd61b7e02f5b" SourceId="1" SourceUrl="http://localhost:16224/Stocks.svc?wsdl" />
+    <MetadataFile FileName="Stocks2.xsd" MetadataType="Schema" ID="e198f8fa-a7e5-450f-b3f2-90cfc48a0840" SourceId="1" SourceUrl="http://localhost:16224/Stocks.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
