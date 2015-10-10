@@ -1,0 +1,27 @@
+<NewDataSet>
+  <Table1>
+    <Column1>1</Column1>
+    <Column2>3</Column2>
+    <Column3>MULTIPACK GP</Column3>
+    <Column4>30</Column4>
+    <Column5>9</Column5>
+    <Column6>270</Column6>
+  </Table1>
+  <Table1>
+    <Column1>2</Column1>
+    <Column2>3</Column2>
+    <Column3>MULTIPACK GP</Column3>
+    <Column4>30</Column4>
+    <Column5>9</Column5>
+    <Column6>270</Column6>
+  </Table1>
+  <Table1>
+    <Column1>3</Column1>
+    <Column2>3</Column2>
+    <Column3>MULTIPACK GP</Column3>
+    <Column4>30</Column4>
+    <Column5>9</Column5>
+    <Column6>270</Column6>
+  </Table1>
+  <Table1 />
+</NewDataSet>

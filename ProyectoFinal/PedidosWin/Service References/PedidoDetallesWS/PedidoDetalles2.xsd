@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:16224/PedidoDetalles.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" />
+  <xs:element name="CrearPedidoDetalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codCompania" type="xs:int" />
+        <xs:element minOccurs="0" name="codSucursalCia" type="xs:int" />
+        <xs:element minOccurs="0" name="ano" type="xs:int" />
+        <xs:element minOccurs="0" name="numeroPedido" type="xs:int" />
+        <xs:element minOccurs="0" name="numeroItem" type="xs:int" />
+        <xs:element minOccurs="0" name="codItemArticulo" type="xs:int" />
+        <xs:element minOccurs="0" name="unidadesPedidas" type="xs:int" />
+        <xs:element minOccurs="0" name="unidadesComprometidas" type="xs:int" />
+        <xs:element minOccurs="0" name="importePrecioUnitarioSIGV" type="xs:double" />
+        <xs:element minOccurs="0" name="importePrecioUnitarioCIGV" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalBruto" type="xs:double" />
+        <xs:element minOccurs="0" name="porcentajeDescuento" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalDescuento" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalNeto" type="xs:double" />
+        <xs:element minOccurs="0" name="codEstadoAtencion" type="xs:int" />
+        <xs:element minOccurs="0" name="codEstadoRegistro" type="xs:int" />
+        <xs:element minOccurs="0" name="codUsuarioCreador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecCreacion" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="codUsuarioUpdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecUpdate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPedidoDetalleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" minOccurs="0" name="CrearPedidoDetalleResult" nillable="true" type="q1:PedidoDetalle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPedidoDetalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPedidoDetalleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" minOccurs="0" name="ObtenerPedidoDetalleResult" nillable="true" type="q2:PedidoDetalle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedidoDetalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroItem" type="xs:int" />
+        <xs:element minOccurs="0" name="codCompania" type="xs:int" />
+        <xs:element minOccurs="0" name="codSucursalCia" type="xs:int" />
+        <xs:element minOccurs="0" name="ano" type="xs:int" />
+        <xs:element minOccurs="0" name="numeroPedido" type="xs:int" />
+        <xs:element minOccurs="0" name="codItemArticulo" type="xs:int" />
+        <xs:element minOccurs="0" name="unidadesPedidas" type="xs:int" />
+        <xs:element minOccurs="0" name="unidadesComprometidas" type="xs:int" />
+        <xs:element minOccurs="0" name="importePrecioUnitarioSIGV" type="xs:double" />
+        <xs:element minOccurs="0" name="importePrecioUnitarioCIGV" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalBruto" type="xs:double" />
+        <xs:element minOccurs="0" name="porcentajeDescuento" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalDescuento" type="xs:double" />
+        <xs:element minOccurs="0" name="importeSubtotalNeto" type="xs:double" />
+        <xs:element minOccurs="0" name="codEstadoAtencion" type="xs:int" />
+        <xs:element minOccurs="0" name="codEstadoRegistro" type="xs:int" />
+        <xs:element minOccurs="0" name="codUsuarioCreador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecCreacion" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="codUsuarioUpdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fecUpdate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedidoDetalleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" minOccurs="0" name="ModificarPedidoDetalleResult" nillable="true" type="q3:PedidoDetalle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarPedidoDetalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarPedidoDetalleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPedidoDetalle">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPedidoDetalleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" minOccurs="0" name="ListarPedidoDetalleResult" nillable="true" type="q4:ArrayOfPedidoDetalle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
