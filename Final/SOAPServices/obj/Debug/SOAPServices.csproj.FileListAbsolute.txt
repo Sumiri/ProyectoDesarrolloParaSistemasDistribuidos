@@ -1,6 +1,0 @@
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\SOAPServices.dll
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\SOAPServices.pdb
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\Iesi.Collections.dll
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\NHibernate.dll
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\obj\Debug\SOAPServices.dll
-D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\obj\Debug\SOAPServices.pdb
