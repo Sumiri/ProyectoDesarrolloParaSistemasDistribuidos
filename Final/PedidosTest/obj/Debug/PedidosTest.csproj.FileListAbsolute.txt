@@ -80,3 +80,6 @@ D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\bin
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.dll
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.pdb
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.dll
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\obj\Debug\PedidosTest.pdb

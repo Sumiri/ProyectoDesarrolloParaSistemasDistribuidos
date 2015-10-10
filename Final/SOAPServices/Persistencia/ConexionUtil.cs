@@ -16,7 +16,7 @@ namespace SOAPServices.Persistencia
             //return "Server=JAIME-PC\\SQL2008R2;Database=BD_Pedidos;User Id=raponte; Password=xzfqxt";
             //return "Data Source=TOSHIBA\\SQLEXPRESS;Initial Catalog=BD_Pedidos;Integrated Security=True";
             //return "Data Source=WSVIJIMENEZ\\SQLEXPRESS;Database=BD_Pedidos;User Id=vjimenez; Password=vji2002";
-            return "Server=localhost\\SQLEXPRESS; Database = BD_Asesores; User Id=vjimenez;Password=vji2002"; 
+            return "Server=localhost\\SQLEXPRESS; Database = BD_PEDIDOS; User Id=vjimenez;Password=vji2002"; 
         }
     }
 }

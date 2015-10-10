@@ -153,3 +153,15 @@ C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources
 C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
 C:\DSD\ProyectoDSD_v4\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
 >>>>>>> 52e56b45aa6904acc3df60d316ef42fd33968554
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\bin\Debug\PedidosWin.exe.config
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.exe
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.pdb
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.csprojResolveAssemblyReference.cache
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmArticulo.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmCliente.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmEstadisticas.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmListado.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmPedido.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.frmPrincipal.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.Properties.Resources.resources
+D:\ultimo\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosWin\obj\Debug\PedidosWin.csproj.GenerateResource.Cache
