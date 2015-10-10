@@ -1,0 +1,7 @@
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\SOAPServices.dll
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\SOAPServices.pdb
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\Iesi.Collections.dll
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\bin\NHibernate.dll
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\obj\Debug\SOAPServices.dll
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\obj\Debug\SOAPServices.pdb
+D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\SOAPServices\obj\Debug\SOAPServices.csprojResolveAssemblyReference.cache
