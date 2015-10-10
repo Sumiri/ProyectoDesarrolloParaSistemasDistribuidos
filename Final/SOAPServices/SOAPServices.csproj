@@ -75,11 +75,14 @@
     <EmbeddedResource Include="Dominio\Articulo.hbm.xml" />
     <EmbeddedResource Include="Dominio\Pedido.hbm.xml" />
     <EmbeddedResource Include="Dominio\PedidoDetalle.hbm.xml" />
+    <EmbeddedResource Include="Dominio\Stock.hbm.xml" />
     <Content Include="Librerias\Iesi.Collections.dll" />
     <Content Include="Librerias\NHibernate.dll" />
     <Content Include="Logo.svc" />
     <Content Include="PedidoDetalles.svc" />
     <Content Include="Pedidos.svc" />
+    <Content Include="Stocks.svc" />
+    <Content Include="VerificaDocumento.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,10 +96,13 @@
     <Compile Include="Dominio\Cliente.cs" />
     <Compile Include="Dominio\Pedido.cs" />
     <Compile Include="Dominio\PedidoDetalle.cs" />
+    <Compile Include="Dominio\Stock.cs" />
     <Compile Include="IArticulos.cs" />
     <Compile Include="IClientes.cs" />
     <Compile Include="IPedidoDetalles.cs" />
     <Compile Include="IPedidos.cs" />
+    <Compile Include="IStocks.cs" />
+    <Compile Include="IVerificaDocumento.cs" />
     <Compile Include="Logo.svc.cs">
       <DependentUpon>Logo.svc</DependentUpon>
     </Compile>
@@ -114,7 +120,14 @@
     <Compile Include="Persistencia\NHibernateHelper.cs" />
     <Compile Include="Persistencia\PedidoDAO.cs" />
     <Compile Include="Persistencia\PedidoDetalleDAO.cs" />
+    <Compile Include="Persistencia\StockDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stocks.svc.cs">
+      <DependentUpon>Stocks.svc</DependentUpon>
+    </Compile>
+    <Compile Include="VerificaDocumento.svc.cs">
+      <DependentUpon>VerificaDocumento.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,8 +11,10 @@ namespace RESTServices.Persistencia
         {
             get
             {
-                return "Data Source=CASA\\SQLEXPRESS;Database=BD_PEDIDOS;User Id=vjimenez; Password=vji2002";
-                //return "Data Source=TOSHIBA\\SQLEXPRESS;Initial Catalog=BD_PEDIDOS;Integrated Security=True";
+                //return "Data Source=localhost\\SQLEXPRESS;Initial Catalog=BD_PEDIDOS;Integrated Security=True";
+                //return "Server=JAIME-PC\\SQL2008R2;Database=BD_Pedidos;User Id=jgutierrez; Password=xzfqxt";
+                return "Server=localhost\\SQLEXPRESS; Database = BD_Asesores; User Id=vjimenez;Password=vji2002"; 
+
             }
         }
     }

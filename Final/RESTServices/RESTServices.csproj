@@ -60,31 +60,39 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientesREST.svc" />
-    <Content Include="Facturas.svc" />
+    <Content Include="ComisionesREST.svc" />
     <Content Include="PedidosREST.svc" />
+    <Content Include="UsuariosREST.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientesREST.svc.cs">
       <DependentUpon>ClientesREST.svc</DependentUpon>
     </Compile>
-    <Compile Include="Dominio\Factura.cs" />
+    <Compile Include="ComisionesREST.svc.cs">
+      <DependentUpon>ComisionesREST.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Comision.cs" />
     <Compile Include="Dominio\Pedido.cs" />
     <Compile Include="Dominio\Cliente.cs" />
-    <Compile Include="Facturas.svc.cs">
-      <DependentUpon>Facturas.svc</DependentUpon>
-    </Compile>
+    <Compile Include="Dominio\Usuario.cs" />
     <Compile Include="IClientesREST.cs" />
-    <Compile Include="IFacturas.cs" />
+    <Compile Include="IComisionesREST.cs" />
     <Compile Include="IPedidosREST.cs" />
+    <Compile Include="IUsuariosREST.cs" />
     <Compile Include="PedidosREST.svc.cs">
       <DependentUpon>PedidosREST.svc</DependentUpon>
     </Compile>
     <Compile Include="Persistencia\ClienteDAO.cs" />
+    <Compile Include="Persistencia\ComisionDAO.cs" />
     <Compile Include="Persistencia\ConexionUtil.cs" />
     <Compile Include="Persistencia\FacturaDAO.cs" />
     <Compile Include="Persistencia\PedidoDAO.cs" />
+    <Compile Include="Persistencia\UsuarioDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuariosREST.svc.cs">
+      <DependentUpon>UsuariosREST.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

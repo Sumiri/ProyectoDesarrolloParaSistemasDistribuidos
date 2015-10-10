@@ -82,6 +82,7 @@ namespace PedidosWin
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             String numero = dataGridView1.CurrentRow.Cells[7].Value.ToString();
             String cliente = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             String fecha ="01/10/2016";
@@ -120,6 +121,10 @@ namespace PedidosWin
             }
            
             
+=======
+            MessageBox.Show("Pedido Facturado","Sistema de Pedidos");
+            this.Close();
+>>>>>>> 52e56b45aa6904acc3df60d316ef42fd33968554
         }
     }
 }

@@ -44,12 +44,13 @@ namespace PedidosWin
 
         }
 
-        private void estadisticasDePedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void estadísticasDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
             ofrmEstadisticas.Show();
         }
 
+<<<<<<< HEAD
         private void recuperarFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -85,5 +86,12 @@ namespace PedidosWin
             }
         }
 
+=======
+        private void consolidadoDeComisionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmComisiones ofrmComisiones = new frmComisiones();
+            ofrmComisiones.Show();
+        }
+>>>>>>> 52e56b45aa6904acc3df60d316ef42fd33968554
     }
 }

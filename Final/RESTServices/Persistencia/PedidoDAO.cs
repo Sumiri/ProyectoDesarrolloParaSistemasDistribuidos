@@ -166,10 +166,12 @@ namespace RESTServices.Persistencia
                             Cliente clienteEncontrado = js.Deserialize<Cliente>(clienteJson);
 
                             pedidoEncontrado.Cliente = clienteEncontrado.RazonSocial;
+                            pedidoEncontrado.Direccion = clienteEncontrado.Direccion;
 
                             if (pedidoEncontrado.Moneda == "1")
                                 pedidoEncontrado.Moneda = "S/.";
-
+                            if (pedidoEncontrado.Moneda == "2")
+                                pedidoEncontrado.Moneda = "US$";
                             Pedidos.Add(pedidoEncontrado);
                         }
                     }

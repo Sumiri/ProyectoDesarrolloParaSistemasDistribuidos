@@ -42,6 +42,32 @@ C:\DSD\ProyectoDSD_v3\PedidosTest\bin\Debug\SOAPServices.pdb
 C:\DSD\ProyectoDSD_v3\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
 C:\DSD\ProyectoDSD_v3\PedidosTest\obj\Debug\PedidosTest.dll
 C:\DSD\ProyectoDSD_v3\PedidosTest\obj\Debug\PedidosTest.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\PedidosTest.dll.config
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\PedidosTest.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\PedidosTest.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\RESTServices.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\SOAPServices.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\NHibernate.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\Iesi.Collections.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\RESTServices.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\SOAPServices.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\obj\Debug\PedidosTest.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\PedidosTest\obj\Debug\PedidosTest.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.dll.config
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\PedidosTest.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\RESTServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\SOAPServices.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\NHibernate.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\Iesi.Collections.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\RESTServices.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\bin\Debug\SOAPServices.pdb
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.csprojResolveAssemblyReference.cache
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.dll
+C:\Jaime\UPC\6to ciclo\Desarrollo para sistemas distribuidos\trabajo grupal\ProyectoDSD\PedidosTest\obj\Debug\PedidosTest.pdb
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\bin\Debug\PedidosTest.dll.config
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\bin\Debug\PedidosTest.dll
 D:\distribuidos\ProyectoDesarrolloParaSistemasDistribuidos\Final\PedidosTest\bin\Debug\PedidosTest.pdb
