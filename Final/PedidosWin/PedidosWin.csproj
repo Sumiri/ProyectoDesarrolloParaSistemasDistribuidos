@@ -73,12 +73,6 @@
     <Compile Include="frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmComisiones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmComisiones.Designer.cs">
-      <DependentUpon>frmComisiones.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmEstadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,14 +124,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\VerificarRUCServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmArticulo.resx">
       <DependentUpon>frmArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmComisiones.resx">
-      <DependentUpon>frmComisiones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstadisticas.resx">
       <DependentUpon>frmEstadisticas.cs</DependentUpon>
@@ -226,6 +222,13 @@
     <None Include="Service References\StocksServiceReference\Stocks2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\VerificarRUCServiceReference\VerificaDocumento.wsdl" />
+    <None Include="Service References\VerificarRUCServiceReference\VerificaDocumento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VerificarRUCServiceReference\VerificaDocumento1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -245,6 +248,7 @@
     <WCFMetadataStorage Include="Service References\PedidoDetallesWS\" />
     <WCFMetadataStorage Include="Service References\PedidosWS\" />
     <WCFMetadataStorage Include="Service References\StocksServiceReference\" />
+    <WCFMetadataStorage Include="Service References\VerificarRUCServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ClientesServiceReference\Clientes.disco" />
@@ -323,6 +327,13 @@
     <None Include="Service References\StocksServiceReference\configuration91.svcinfo" />
     <None Include="Service References\StocksServiceReference\configuration.svcinfo" />
     <None Include="Service References\StocksServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VerificarRUCServiceReference\VerificaDocumento.disco" />
+    <None Include="Service References\VerificarRUCServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\VerificarRUCServiceReference\configuration.svcinfo" />
+    <None Include="Service References\VerificarRUCServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

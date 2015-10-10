@@ -76,7 +76,5 @@ namespace PedidosWin
             MessageBox.Show("Pedido Facturado","Sistema de Pedidos");
             this.Close();
         }
-
-       
     }
 }
