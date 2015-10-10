@@ -1,0 +1,17 @@
+C:\DSD\ProyectoDSD_v2\RESTServices\bin\RESTServices.dll.config
+C:\DSD\ProyectoDSD_v2\RESTServices\bin\RESTServices.dll
+C:\DSD\ProyectoDSD_v2\RESTServices\bin\RESTServices.pdb
+C:\DSD\ProyectoDSD_v2\RESTServices\obj\Debug\RESTServices.dll
+C:\DSD\ProyectoDSD_v2\RESTServices\obj\Debug\RESTServices.pdb
+C:\DSD\ProyectoDSD_v2\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache
+C:\DSD\ProyectoDSD_v3\RESTServices\obj\Debug\RESTServices.dll
+C:\DSD\ProyectoDSD_v3\RESTServices\bin\RESTServices.dll.config
+C:\DSD\ProyectoDSD_v3\RESTServices\bin\RESTServices.dll
+C:\DSD\ProyectoDSD_v3\RESTServices\bin\RESTServices.pdb
+C:\DSD\ProyectoDSD_v3\RESTServices\obj\Debug\RESTServices.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\bin\RESTServices.dll.config
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\bin\RESTServices.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\bin\RESTServices.pdb
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\obj\Debug\RESTServices.csprojResolveAssemblyReference.cache
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\obj\Debug\RESTServices.dll
+E:\proyectos\ProyectoDesarrolloParaSistemasDistribuidos-master\Final\RESTServices\obj\Debug\RESTServices.pdb

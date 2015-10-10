@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Articulos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:16224/Articulos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:16224/Articulos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:16224/Articulos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SOAPServices.Dominio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IArticulos_CrearArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_CrearArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ObtenerArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ObtenerArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ModificarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ModificarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_EliminarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_EliminarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ListarArticulos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArticulos" />
+  </wsdl:message>
+  <wsdl:message name="IArticulos_ListarArticulos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarArticulosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IArticulos">
+    <wsdl:operation name="CrearArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IArticulos/CrearArticulo" message="tns:IArticulos_CrearArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IArticulos/CrearArticuloResponse" message="tns:IArticulos_CrearArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IArticulos/ObtenerArticulo" message="tns:IArticulos_ObtenerArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IArticulos/ObtenerArticuloResponse" message="tns:IArticulos_ObtenerArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IArticulos/ModificarArticulo" message="tns:IArticulos_ModificarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IArticulos/ModificarArticuloResponse" message="tns:IArticulos_ModificarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IArticulos/EliminarArticulo" message="tns:IArticulos_EliminarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IArticulos/EliminarArticuloResponse" message="tns:IArticulos_EliminarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarArticulos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IArticulos/ListarArticulos" message="tns:IArticulos_ListarArticulos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IArticulos/ListarArticulosResponse" message="tns:IArticulos_ListarArticulos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IArticulos" type="tns:IArticulos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearArticulo">
+      <soap:operation soapAction="http://tempuri.org/IArticulos/CrearArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerArticulo">
+      <soap:operation soapAction="http://tempuri.org/IArticulos/ObtenerArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IArticulos/ModificarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IArticulos/EliminarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarArticulos">
+      <soap:operation soapAction="http://tempuri.org/IArticulos/ListarArticulos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Articulos">
+    <wsdl:port name="BasicHttpBinding_IArticulos" binding="tns:BasicHttpBinding_IArticulos">
+      <soap:address location="http://localhost:16224/Articulos.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
